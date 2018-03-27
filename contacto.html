@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Moviles">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link href="css/contacto.css" rel="stylesheet" type="text/css">
+	<title>Index</title>
+</head>
+<body>
+	<div class="header">
+	   <img id="logo" src="img/logo.png">
+       <p><a href="log.php">Entrar</a> | <a href="registro.php" target="_blank">Registrarse</a></p>
+       <div class="menu">
+	       <ul>
+	           <li><a href="contacto.html">Envia tus clips</a></li>
+               <li><a href="clips.html">Clips de la semana</a></li>
+               <li><a href="Streamers.html">Streamers</a></li>
+	           <li><a href="Objetos.html">Objetos</a></li>
+	           <li><a href="index.html">Inicio</a></li>
+	       </ul>
+        </div>
+	</div>
+		<div class="contenido" align="center">
+		<div class="mail">
+		<form method="post" action="php/email.php">
+			<h1>Envianos tu clip</h1>
+			<p>Tu direccion de correo
+			<br>
+			<br>
+			<input type="email" name="destino" class="correo" placeholder="Escribe aqui tu correo..."></p>
+			<p>Link del clip
+			<br>
+			<br>
+			<input type="text" name="link" class="link" placeholder="Enlace al clip..."></p>
+            <p>Breve explicacion</p>
+            <div>
+            <textarea name="mensaje" id="cuerpo" cols="30" rows="6" placeholder="Haz un breve resumen..."></textarea>
+            </div>
+            <br>
+			<input type="submit" value="Enviar" class="boton">
+		</form>
+		</div>
+		</div>
+	<div class="footer">
+	    <ul>
+	        <li><table>
+                <tr><td><img id="youtube" src="img/youtube.png" ></td><td><p><a href="#"><h3>Youtube</h3></a></p>
+                </td>
+                </tr>
+                <tr><td><img id="instagram" src="img/instagram.png" ></td><td><p><a href="#"><h3>Instagram</h3></a></p>
+                </td>
+                </tr>
+                </table></li>
+	    </ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<?php
+    require 'php/conexion.php';
+    $message ='';
+    if(!empty($_POST['userlg']) && !empty($_POST['contralg']) && !empty($_POST['contra2lg']) && !empty($_POST['email'])){
+        $sql ="INSERT INTO usuarios (username,contraseña,email) VALUES (?, ?, ?)";
+        $stmt = $mysqli->prepare($sql);
+        $password = password_hash($_POST['contralg'], PASSWORD_BCRYPT);
+        $stmt->bind_param('sss',$_POST['userlg'],$password,$_POST['email']);
+        if($stmt->execute()){
+            $message = 'Usuario creado correctamente!';
+        }else{
+            $message = 'Lo sentimos, ha habido un error, intentelo de nuevo mas tarde.';
+        }
+    }
+?>
+<!DOCTYPE html>
+<html lang="es" ng-app="Moviles">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="javascript.js"></script>
+	<link href="css/plantilla.css" rel="stylesheet" type="text/css">
+	<title>Index</title>
+</head>
+    <body>
+	    <div class="header">
+	   <img id="logo" src="img/logo.png">
+       <p><a href="log.php">Entrar</a> | <a href="registro.php" target="_blank">Registrarse</a></p>
+       <div class="menu">
+	       <ul>
+	           <li><a href="contacto.html">Envia tus clips</a></li>
+               <li><a href="clips.html">Clips de la semana</a></li>
+               <li><a href="Streamers.html">Streamers</a></li>
+	           <li><a href="Objetos.html">Objetos</a></li>
+	           <li><a href="index.php">Inicio</a></li>
+	       </ul>
+        </div>
+	</div>
+	<div class="contenido">
+        <div class="imagen">
+            
+        </div>
+        <div align="center">
+        <table>
+            <tr><td><img src="img/Fortnite%252Fbattle-royale%252FspaceMan-554x765-106c2c35c0679b9ccf4ff2089d205df8c6b55d05.png"></td>
+            <td><p class="texto">El Registro ha sido un exito</p>
+	    <a class="link" href="index.php"><p>Vuelta al inicio</p></a>
+                </td>
+                </tr>
+                </table>
+	</div>
+	    <div class="footer">
+	    <ul>
+	        <li><table>
+                <tr><td><img id="youtube" src="img/youtube.png" ></td><td><p><a href="#"><h3>Youtube</h3></a></p>
+                </td>
+                </tr>
+                <tr><td><img id="instagram" src="img/instagram.png" ></td><td><p><a href="#"><h3>Instagram</h3></a></p>
+                </td>
+                </tr>
+                </table></li>
+	    </ul>
+	    </div>
+	</div>
+    </body>
+</html>

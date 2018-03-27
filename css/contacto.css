@@ -1,0 +1,119 @@
+html,body{
+    height: 100%;
+	margin:0px;
+}
+.header{
+    font-family: 'Luckiest Guy', cursive;
+    height: 300px;
+    min-height: 300px;
+    background-image: url("../img/Fortnite.jpg");
+    background-size:auto;
+    width: expression(document.body.clientWidth < 1301? "1300px": "auto" );
+        min-width:1300px;
+}
+#logo{
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.header p a{
+    position:static;
+    text-decoration: none;
+    color:black;
+}
+.header p{
+    position: static;
+    margin-right: 20px;
+    float:right;
+}
+.header p a:hover{
+    color:orange;
+}
+.header ul li{
+    display:inline-block;
+    float: right;
+}
+.header ul li a{
+    position:relative;
+    bottom: 0px;
+    padding-right: 20px;
+    text-decoration: none;
+    color:black;
+}
+.header ul li a:hover{
+    color:orange;
+}
+.menu{
+    height: 50px;
+    width: auto;
+}
+/*--------------*/
+body{
+    margin 0;
+    padding:0;
+    background-image: url(../img/imgcontacto.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.contenido h1{
+    font-family: 'Luckiest Guy', cursive;
+    color:skyblue;
+    font-size: 45px;
+}
+.contenido p{
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+}
+.contenido input{
+    padding-left: 15px;
+    height: 40px;
+    width: 400px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+.contenido .boton{
+    width: 415px;
+    border:none;
+    background-color: mediumpurple;
+}
+#cuerpo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    width: 400px;
+}
+.contenido .boton:hover{
+    background-color: skyblue;
+}
+/*--------------*/
+#instagram{
+    width: 50px;
+    margin-left: 25%;
+}
+#youtube{
+    width: 100px;
+}
+.footer{
+    bottom:0px;
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    height: 30%;
+    width: expression(document.body.clientWidth < 1301? "1300px": "auto" );
+        min-width:1300px;
+}
+.footer ul li{
+    display: inline-block;
+    float:left;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+.footer ul li a{
+    font-family: 'Luckiest Guy', cursive;
+    text-decoration: none;
+    color:black;
+}
+.footer ul li a:hover{
+    color:orange;
+}
+/*-------------*/
