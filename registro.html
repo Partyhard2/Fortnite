@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Moviles">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="scripts/javascript.js"></script>
+	<link href="css/registro.css" rel="stylesheet" type="text/css">
+	<title>Index</title>
+</head>
+    <body>
+	    <div class="header">
+	       <img id="logo" src="img/logo.png">
+	       <p><a href="log.php">Entrar</a> | <a href="registro.php">Registrarse</a></p>
+	       <ul>
+	           <li><a href="contacto.html">Envia tus clips</a></li>
+               <li><a href="clips.html">Clips de la semana</a></li>
+	           <li><a href="Objetos.html">Objetos</a></li>
+	           <li><a href="index.html">Inicio</a></li>
+	       </ul>
+	    </div>
+	    <div class="contenido" align="center">
+        <p class="texto">Registrate gratis con el siguiente formulario o inicia sesion <a href="log.php" clas="aqui">aqui</a></p>
+        <hr>
+         <div class="form">
+          <form action="registrado.php" method="post" onsubmit="validar_form();">
+           <div class="question">
+            <p>Nombre de usuario</p>
+	        <input type="text" name="userlg" id="user" placeholder="Nombre de usuario..." onblur="errorusuario();" required><br>
+	        <br>
+	        <div id="eruser" class="error"></div>
+	        </div>
+	        <div class="question">
+	        <p>Contraseña</p>
+	        <input type="password" name="contralg" id="pass" placeholder="Contraseña..." onblur="errorcontraseña();" required>
+	        <br>
+	        <br>
+	        <div id="erpass" class="error"></div>
+	        </div>
+	        <div class="question">
+	        <p>Confirmar contraseña</p>
+	        <input type="password" name="contra2lg" id="cpass" placeholder="Confrmar contraseña..." onblur="errorccontraseña();" required><br>
+	        <br>
+	        <div id="ercpass" class="error"></div>
+	        </div>
+	        <div class="question">
+	        <p>Dirección de correo electronico</p>
+	        <input type="email" name="email" id="mail" placeholder="Direccion de correo electronico..." onblur="errormail();" required><br>
+	        <br>
+	        <div id="ermail" class="error"></div>
+	        </div>
+           <br>
+            <input type="submit" class="boton">
+            </form>
+            </div>
+	    </div>
+	    <div class="footer">
+	    <ul>
+	        <li><a href="#">Instagram</a></li>
+	        <li><a href="#">Youtube</a></li>
+	    </ul>
+	</div>
+    </body>
+</html>

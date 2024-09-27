@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Moviles">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="scripts/javascript.js"></script>
+	<link href="css/estilos.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0,maximum-scale=1.5,minimum-scale=1.0">
+	<title>Index</title>
+</head>
+<body>
+	<div class="header">
+	   <img id="logo" src="img/logo.png">
+       <p><a href="log.php">Entrar</a> | <a href="registro.php" target="_blank">Registrarse</a></p>
+       <div class="menu">
+	       <ul>
+	           <li><a href="contacto.html">Envia tus clips</a></li>
+               <li><a href="clips.html">Clips de la semana</a></li>
+               <li><a href="Streamers.html">Streamers</a></li>
+	           <li><a href="Objetos.html">Objetos</a></li>
+	           <li><a href="index.html">Inicio</a></li>
+	       </ul>
+        </div>
+	</div>
+	<div class="contenido">
+    <br>
+       <div class="welcome">
+        <?php if(!empty($user)): ?>
+        <br>Bienvenido. <? = $user['username'] ?>
+        <a href="logout.php">Salir</a>
+        <?php else: ?>
+        </div>
+	    <h1 id="noticias">Noticias</h1>
+           <hr>
+           <div class="noticia4">
+            <h3 class="titulo">Evento Fortnite ElRubius</h3>
+        <p class="titulo">El Youtuber mas famoso de España bate el record de visualizaciones en directo llegando a mas de 1.000.000 de views.</p>
+        <br>
+        <img src="img/YT-Battle-Royale-626x314.jpg" id="llama">
+        </div>
+        <hr>
+       
+        <div class="noticia1">
+            <h3 class="titulo"><b>Explosivos remotos (Battle Royale)</b></h3>
+	    <p class="titulo">Destruid fortalezas con tan solo un botón.</p>
+	    <br>
+	    <iframe src="https://www.youtube.com/embed/1iCTnazvYa0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <br>
+        <div class="parche">
+          <table>
+          <tr>
+          <td class="imagenp">
+            <a href="https://www.epicgames.com/fortnite/es-ES/news/v3-3-patch-notes" target="_blank"><img src="img/imgparche.jpg" id="#imgparche"></a>
+            </td>
+            <td class="textop">
+            <p><a href="https://www.epicgames.com/fortnite/es-ES/news/v3-3-patch-notes" target="_blank">
+                <h2 id="textoparche">YA ESTAN DISPONIBLES LAS NOTAS DEL PARCHE 3.3!</h2></a></p>
+                <?php endif; ?>
+            </td>
+            </tr>
+            </table>
+        </div>
+        <hr>
+        <p href="#" id="vmas" onclick="mostrar_mas();">Ver mas</p>
+        <div id="vermas">
+        <div class="noticia2">
+            <h3 class="titulo">Llama de suministros (Battle Royale)</h3>
+        <p class="titulo">Encontrad botín en los lugares menos esperados. La llama de suministros se ha unido a la batalla.</p>
+        <br>
+        <img src="img/fortnite-supply-llama.jpg" id="llama">
+        </div>
+        <hr>
+        <div class="noticia3">
+            <h3 class="titulo"><b>Fortnite ahora en tu movil!</b></h3>
+	    <p class="titulo">Imagina jugar donde quieras.</p>
+	    <br>
+	    <iframe src="https://www.youtube.com/embed/ygYYbePZYUM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <hr>
+        </div>
+        <p id="vmenos" onclick="mostrar_menos();">Ver menos</p>
+	</div>
+	<div class="footer">
+	    <ul>
+	        <li><table>
+                <tr><td><img id="youtube" src="img/youtube.png" ></td><td><p><a href="#"><h3>Youtube</h3></a></p>
+                </td>
+                </tr>
+                <tr><td><img id="instagram" src="img/instagram.png" ></td><td><p><a href="#"><h3>Instagram</h3></a></p>
+                </td>
+                </tr>
+                </table></li>
+	    </ul>
+	</div>
+</body>
+</html>

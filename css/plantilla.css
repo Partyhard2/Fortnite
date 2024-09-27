@@ -1,0 +1,102 @@
+body{
+    background: url(../img/fondo.jpg) center fixed no-repeat;
+    width: 100%;
+}
+html,body{
+    height: 100%;
+	margin:0px;
+}
+.header{
+    font-family: 'Luckiest Guy', cursive;
+    height: 300px;
+    min-height: 300px;
+    background-image: url("../img/Fortnite.jpg");
+    background-size:auto;
+}
+#logo{
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.header p a{
+    position:static;
+    text-decoration: none;
+    color:black;
+}
+.header p{
+    position: static;
+    margin-right: 20px;
+    float:right;
+}
+.header p a:hover{
+    color:orange;
+}
+.header ul li{
+    display:inline-block;
+    float: right;
+}
+.header ul li a{
+    position:relative;
+    bottom: 0px;
+    padding-right: 20px;
+    text-decoration: none;
+    color:black;
+}
+.header ul li a:hover{
+    color:orange;
+}
+.menu{
+    height: 50px;
+    width: auto;
+}
+/*--------------*/
+.link{
+    font-family: 'Luckiest Guy', cursive;
+    text-decoration:none;
+    color:black;
+    font-size: 50px;
+}
+.contenido .texto{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align:center;
+}
+.contenido a:hover{
+    color:orange;
+}
+td{
+    
+}
+table{
+    margin: 0;
+    padding: 0;
+}
+/*--------------*/
+#youtube{
+    width: 100px;
+}
+#instagram{
+    width: 50px;
+    margin-left: 25%;
+}
+.footer{
+    bottom:0px;
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    height: 30%;
+}
+.footer ul li{
+    display: inline-block;
+    float:left;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+.footer ul li a{
+    font-family: 'Luckiest Guy', cursive;
+    text-decoration: none;
+    color:black;
+}
+.footer ul li a:hover{
+    color:orange;
+}
+/*-------------*/
